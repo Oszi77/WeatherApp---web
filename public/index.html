@@ -2,9 +2,15 @@
 <html lang="hu">
   <head>
     <meta charset="utf-8">
+    <!--Edg bőngészőnek szól-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--Reszponzív tartalom, witdh - milyen szélességhez igazodjon lehet 1 érték pl. 1920 vagy device-width, akkor az
+    adott képernyő szélessége, initial-scale=1.0 - kezdeti zoomja az oldalnak, itt maximális 100%, 
+    maximum-scale=1.0 - az az érték, ameddig nagyíthatja, user-scalable - engedélyezi, vagy tiltja a nagyítást. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
